@@ -1,13 +1,15 @@
 import ProjectList from './components/ProjectList'
 import Footer from './components/Footer'
+import Logo from './components/Logo'
 import { projects } from './data/projects'
 import './App.css'
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-100 w-full">
-      <div className="h-screen flex items-center justify-center">
-        <h2 className="text-2xl sm:text-3xl font-bold text-center">
+      <div className="h-screen flex flex-col items-center justify-center">
+        <Logo />
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mt-8">
           D C Lasky
         </h2>
       </div>
