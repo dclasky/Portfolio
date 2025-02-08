@@ -70,3 +70,17 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@layer components {
+  .card-base {
+    @apply border rounded-lg p-3 sm:p-4 hover:shadow-lg transition-shadow bg-white;
+  }
+  
+  .header-base {
+    @apply w-full p-3 sm:p-4 bg-gray-800;
+  }
+  
+  .footer-base {
+    @apply w-full p-3 sm:p-4 bg-gray-800 text-white mt-auto;
+  }
+}
