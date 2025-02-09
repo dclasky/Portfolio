@@ -11,7 +11,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect, isExpanded
   return (
     <div 
       className={`card-base cursor-pointer transition-all ${
-        isExpanded ? 'ring-2 ring-blue-500' : 'hover:shadow-lg'
+        isExpanded ? 'shadow-lg shadow-blue-100' : ''
       }`}
       onClick={() => onSelect(project.id)}
     >

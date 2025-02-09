@@ -73,7 +73,7 @@ button:focus-visible {
 
 @layer components {
   .card-base {
-    @apply border rounded-lg p-3 sm:p-4 hover:shadow-lg transition-shadow bg-white;
+    @apply rounded-lg p-3 sm:p-4 shadow-md transition-shadow bg-white hover:shadow-lg;
   }
   
   .header-base {

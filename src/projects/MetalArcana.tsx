@@ -7,8 +7,7 @@ const MetalArcana: React.FC = () => {
         <h1 className="text-3xl font-bold mb-4">MetalArcana</h1>
         <div className="prose max-w-none">
           <p className="text-xl text-gray-600">
-            A sophisticated recommendation engine that helps users discover new metal music 
-            based on their listening preferences and deep genre analysis.
+            A straight-forward ecommerce site for a metalwork company
           </p>
         </div>
       </header>
@@ -17,8 +16,11 @@ const MetalArcana: React.FC = () => {
         <h2 className="text-2xl font-bold mb-4">Project Overview</h2>
         <div className="prose max-w-none">
           <p>
-            MetalArcana uses machine learning algorithms to analyze musical features
-            and user preferences, creating personalized recommendations for metal music enthusiasts.
+          MetalArcana is an eCommerce site I built to sell handcrafted metalwork, 
+          featuring a custom layout designed for a clean, minimal shopping experience. 
+          I implemented Snipcart to handle payments, ensuring a smooth and secure checkout 
+          process. The site is straight-forward and visually refined, balancing aesthetics 
+          with functionality to showcase the unique metal pieces.
           </p>
         </div>
       </section>
@@ -26,10 +28,9 @@ const MetalArcana: React.FC = () => {
       <section className="mb-8">
         <h2 className="text-2xl font-bold mb-4">Key Features</h2>
         <ul className="list-disc pl-5 space-y-2">
-          <li>Advanced genre classification using audio fingerprinting</li>
-          <li>Personalized recommendation engine based on listening history</li>
-          <li>Community-driven music discovery system</li>
-          <li>Detailed artist and album analytics</li>
+          <li>A fully customized front-end layout tailored to purpose.</li>
+          <li>Seamless integration of Snipcart for secure payment processing</li>
+          <li>Intuitive navigation and a streamlined checkout process</li>
         </ul>
       </section>
 
@@ -37,21 +38,19 @@ const MetalArcana: React.FC = () => {
         <h2 className="text-2xl font-bold mb-4">Technical Implementation</h2>
         <div className="prose max-w-none">
           <p>
-            Built with Node.js and Express, MetalArcana leverages MongoDB for flexible 
-            data storage and real-time updates. The recommendation engine uses collaborative 
-            filtering and content-based analysis to generate accurate suggestions.
+            Built with REACT, simple and clean(is the way the site's making me feel tonight).
           </p>
         </div>
       </section>
 
       <footer className="flex gap-4 mt-8">
         <a 
-          href="https://github.com/yourusername/metal-arcana"
+          href="https://metalarcana.com"
           className="text-blue-600 hover:text-blue-800"
           target="_blank"
           rel="noopener noreferrer"
         >
-          View on GitHub
+          Check the shop
         </a>
         {/* Add live demo link if available */}
       </footer>

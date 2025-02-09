@@ -11,16 +11,16 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 'metal-arcana',
-    title: 'MetalArcana',
-    description: 'Heavy metal music recommendation engine',
-    technologies: ['Node.js', 'Express', 'MongoDB'],
+    title: 'Metal Arcana',
+    description: 'eCommerce for the metal and the magical',
+    technologies: ['REACT', 'SNIPCART'],
     githubUrl: 'https://github.com/yourusername/metal-arcana'
   },
   {
     id: 'mtg-analysis',
     title: 'MtG Analysis',
     description: 'Magic: The Gathering card analysis tool',
-    technologies: ['Python', 'React', 'TypeScript'],
+    technologies: ['Python', 'Tableau', 'Pandas'],
     githubUrl: 'https://github.com/yourusername/mtg-analysis'
   }
 ]; 
