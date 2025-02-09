@@ -10,7 +10,7 @@ function App() {
       <div className="h-screen flex flex-col items-center justify-center">
         <Logo />
         <h2 className="text-2xl sm:text-3xl font-bold text-center mt-8">
-          D C Lasky
+          {/*D C Lasky*/}
         </h2>
       </div>
 
