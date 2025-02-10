@@ -3,7 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import ProjectCard from './ProjectCard';
 import { Project } from '../data/projects';
 import MetalArcana from '../projects/MetalArcana';
-import MtGAnalysis from '../projects/MtGAnalysis';
+import MtGAnalysis_Mana_Curve from '../projects/MtGAnalysis_Mana_Curve';
+import MtGAnalysis_Rectangle_Theory from '../projects/MtGAnalysis_Rectanlge_Theory';
 
 interface ProjectListProps {
   projects: Project[];
@@ -20,8 +21,10 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
     switch(id) {
       case 'metal-arcana':
         return <MetalArcana />;
-      case 'mtg-analysis':
-        return <MtGAnalysis />;
+      case 'mtg-analysis_mana_curve':
+        return <MtGAnalysis_Mana_Curve />;
+        case 'mtg-analysis_rectangle_theory':
+          return <MtGAnalysis_Rectangle_Theory />;
       default:
         return null;
     }

@@ -17,10 +17,16 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/yourusername/metal-arcana'
   },
   {
-    id: 'mtg-analysis',
-    title: 'MtG Analysis',
-    description: 'Magic: The Gathering card analysis tool',
+    id: 'mtg-analysis_mana_curve',
+    title: 'MtG Mana Curve Analysis',
+    description: 'Magic: The Gathering metagame analysis tool',
     technologies: ['Python', 'Tableau', 'Pandas'],
     githubUrl: 'https://github.com/yourusername/mtg-analysis'
+  },
+  {
+    id: 'mtg-analysis_rectangle_theory',
+    title: 'MtG Rectanlge Theory Analysis',
+    description: 'Magic: The Gathering theory analysis',
+    technologies: ['Python', 'Pandas'],
   }
 ]; 
