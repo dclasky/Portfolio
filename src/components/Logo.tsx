@@ -1,6 +1,11 @@
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 
 const Logo = () => {
+  useEffect(() => {
+    console.log('Logo component mounted');
+  }, []);
+
   return (
     <div className="relative w-96 h-48">
       {/* Initial drawing animation */}
