@@ -4,6 +4,19 @@ import { useEffect } from 'react';
 const Logo = () => {
   useEffect(() => {
     console.log('Logo component mounted');
+
+    const timer = setTimeout(() => {
+      // Smooth scroll to portfolio section
+      const portfolioSection = document.getElementById('portfolio-section');
+      if (portfolioSection) {
+        portfolioSection.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }, 5500); // Adjust this time to match when animation completes
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (

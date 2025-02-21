@@ -7,7 +7,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 
 function App() {
   return (
-    <Router basename="/Portfolio">
+    <Router basename="/">
       <div className="min-h-screen flex flex-col bg-gray-100 w-full">
         <div className="h-screen flex flex-col items-center justify-center">
           <Logo />

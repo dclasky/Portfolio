@@ -23,40 +23,42 @@ const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
         return <MetalArcana />;
       case 'mtg-analysis_mana_curve':
         return <MtGAnalysis_Mana_Curve />;
-        case 'mtg-analysis_rectangle_theory':
-          return <MtGAnalysis_Rectangle_Theory />;
+      case 'mtg-analysis_rectangle_theory':
+        return <MtGAnalysis_Rectangle_Theory />;
       default:
         return null;
     }
   };
 
   return (
-    <div className="w-full grid grid-cols-1 gap-3 sm:gap-4">
-      {projects.map((project) => (
-        <div key={project.id} className="w-full">
-          <ProjectCard 
-            project={project} 
-            onSelect={handleProjectSelect}
-            isExpanded={expandedId === project.id}
-          />
-          <AnimatePresence>
-            {expandedId === project.id && (
-              <motion.div 
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: 'auto' }}
-                exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
-                className="overflow-hidden"
-              >
-                <div className="mt-4 bg-white rounded-lg p-4 w-full">
-                  {renderExpandedContent(project.id)}
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </div>
-      ))}
-    </div>
+    <section id="portfolio-section" className="w-full py-8">
+      <div className="w-full grid grid-cols-1 gap-3 sm:gap-4">
+        {projects.map((project) => (
+          <div key={project.id} className="w-full">
+            <ProjectCard 
+              project={project} 
+              onSelect={handleProjectSelect}
+              isExpanded={expandedId === project.id}
+            />
+            <AnimatePresence>
+              {expandedId === project.id && (
+                <motion.div 
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                  className="overflow-hidden"
+                >
+                  <div className="mt-4 bg-white rounded-lg p-4 w-full">
+                    {renderExpandedContent(project.id)}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 
